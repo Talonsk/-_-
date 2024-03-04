@@ -1,0 +1,1273 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+header{
+    background-color: #d2691e;
+    height: 120px;
+    width: 1440px;
+}
+
+.header_logo{
+    /* header_desktop */
+    display: flex;
+    justify-content: space-between;
+    padding: 40px 75px 30px;
+
+    /* orange */
+    background: #D2691E;
+}
+
+.image_and_text{
+    /* logo */
+    display: flex;
+    /* margin: 0 auto; */
+    width: 275px;
+    height: 50px;
+}
+
+.logo{
+    /* Vector (Stroke) */
+    width: 34px;
+    height: 43px;
+}
+
+/* .logo_and_text, .logo, .menu{
+    overflow: hidden;
+    float: left;
+} */
+
+/* .menu_point {
+    display: none;
+} */
+
+.company_name{
+    color: #ffffff;
+    font-family: "Montserrat-700";
+    font-size: 12px;
+    font-style: italic;
+    margin-left: 25px;
+    padding-top: 7px;
+}
+
+.company_text{
+    color: #ffffff;
+    font-family: "Montserrat-400";
+    font-size: 5px;
+    margin-left: 25px;
+    line-height: 5px;
+}
+
+.phone{
+    color: #ffffff;
+    font-family: "Montserrat-600";
+    font-size: 12px;
+    font-weight: 900;
+    float: left;
+    margin-top: 15px;
+    padding-left: 117px;
+}
+.menu{
+    /* menu */
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    align-content: flex-start;
+    padding: 10px 30px;
+    gap: 20px 30px;
+
+    margin: 0 auto;
+    width: 740px;
+    min-width: 740px;
+    height: 44px;
+}
+
+.menu_point {
+    visibility: visible;
+    float: left;
+    margin-left: 30px;
+    margin-top: 10px;
+    text-decoration: none;
+    color: #ffffff;
+    font-family: "Montserrat-400";
+}
+
+@font-face {
+    font-family: "Montserrat-600";
+    src: url("../fonts/Montserrat-600.woff2");
+}
+
+@font-face {
+    font-family: "Montserrat-700";
+    src: url("../fonts/Montserrat-700.woff2");
+}
+
+/* @media (min-width: 768px) {
+    .header_logo {padding-left: 75px; padding-right: 75px;
+    padding-top: 40px; padding-bottom: 30px;}
+    .logo {width: 34px; height: 43px; padding-top: 3px;}
+    .company_text {font-size: 8px; margin-left: 43px;}
+    .company_name {font-size: 16px; margin-left: 43px;
+    padding-top: 13px;}
+    .phone {font-size: 16px; margin-top: 22px; 
+        padding-left: 0px;}
+    .logo_and_text{width: 309;}
+    .image_and_text{width: 487px;}
+}
+
+@media (min-width: 1440px) {
+    .image_and_text{width: 275px;}
+    .menu_point{ display: inline;}
+    .phone {padding-left: 130px; margin-top: 0px;}
+} */
+
+/* Hero */
+
+.hero{
+    background-image: url("../pictures/vineyards.png");
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 640px;
+    width: 1440px;
+}
+
+.course_information{
+    padding: 125px 105px 25px 105px;
+    display: flex;
+    flex-direction: column;
+    /* align-items: flex-start; */
+    gap: 30px
+}
+
+a{
+    text-decoration: none;
+}
+
+.course_button{
+/* Auto layout */
+    display: flex;
+    /* flex-direction: row; */
+    justify-content: center;
+    /* align-items: center; */
+    padding: 20px 0px;
+
+    width: 240px;
+    /* min-width: 240px; */
+    height: 60px;
+
+    /* orange */
+    background: #D2691E;
+    border-radius: 5px;
+    border-style: none;
+    cursor: pointer;
+}
+
+.button_text{
+    /* btn-text */
+    font-family: 'Montserrat-500';
+    /* font-style: normal; */
+    font-size: 16px;
+    /* line-height: 20px; */
+
+    /* identical to box height */
+
+    /* display: flex; */
+    /* align-items: center; */
+    /* text-align: center; */
+
+    /* white */
+    color: #FFFFFF;
+}
+
+.title_container{
+    width: 694px;
+}
+
+.text_container{
+    width: 500px;
+}
+
+.course_title{
+    font-family: "Playfair-800";
+    font-size: 77px;
+    /* font-weight: 800; */
+    line-height: 77px;
+    /* letter-spacing: 0em;
+    text-align: left; */
+    color: #ffffff;
+}
+
+.course_text{
+    font-family: "Montserrat-400";
+    /* font-size: 16px;
+    font-weight: 400; */
+    line-height: 24px;
+    /* letter-spacing: 0em;
+    text-align: left; */
+    color: #ffffff;
+}
+
+@font-face {
+    font-family: "Playfair-800";
+    src: url("../fonts/Playfair-800.woff2");
+}
+
+@font-face {
+    font-family: "Montserrat-400";
+    src: url("../fonts/Montserrat-400.woff2");
+}
+
+@font-face {
+    font-family: "Montserrat-500";
+    src: url("../fonts/Montserrat-500.woff2");
+}
+
+/* Events */
+
+.events{
+    width: 1440px;
+    height: 697px;
+
+    /* backgroun biege */
+    background: #F0EAD6;
+}
+
+.events_list{
+    display: flex;
+    flex-direction: column;
+    /* align-items: center; */
+    padding: 60px 105px;
+    gap: 50px;
+}
+
+.heading1_btns{
+    /* heading1 & btns */
+
+    /* display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 0px;
+    gap: 726px;
+    isolation: isolate;
+
+    width: 1230px;
+    height: 42px; */
+}
+
+
+.title_events{
+    /* Предстоящие события */
+
+    /* width: 399px;
+    height: 42px; */
+
+    /* h2 */
+    font-family: 'Playfair-800';
+    /* font-style: normal;
+    font-weight: 800; */
+    font-size: 35px;
+    line-height: 42px;
+    /* identical to box height, or 120% */
+    /* display: flex;
+    align-items: center; */
+
+    /* brown */
+    color: #513833;
+}
+
+.maps{
+    /* cards */
+
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    padding: 0px;
+    gap: 30px;
+
+    /* width: 1230px;
+    height: 415px; */
+    overflow-x: scroll;
+}
+
+.card_photo1{
+    width: 390px;
+    height: 415px;
+
+    background: url(../pictures/shashlik.png);
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    border-radius: 5px;
+}
+
+.card_photo2{
+    width: 390px;
+    height: 415px;
+
+    background: url(../pictures/pilaf.png);
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    border-radius: 5px;
+}
+
+.card_photo3{
+    width: 390px;
+    height: 415px;
+
+    background: url(../pictures/dumplings.png);
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    border-radius: 5px;
+}
+
+.program_card{
+    /* program-card */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 25px 20px;
+    gap: 128px;
+    height: 365px;
+}
+
+.location_button{
+    /* location */
+
+    display: flex;
+    /* flex-direction: row; */
+    justify-content: center;
+    align-items: center;
+    /* padding: 0px; */
+    gap: 5px;
+
+    /* margin: 0 auto; */
+    width: 110px;
+    /* min-width: 110px; */
+    height: 32px;
+    min-height: 22px;
+
+    /* orange */
+    background: #D2691E;
+    border-radius: 5px;
+    border-style: none;
+    cursor: pointer;
+}
+
+.card_content{
+    /* content */
+
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    /* padding: 0px; */
+    gap: 35px;
+
+    /* margin: 0 auto; */
+    width: 350px;
+    height: 167px;
+}
+
+.location_text{
+    /* Кавказ */
+
+    /* width: 44px;
+    height: 12px; */
+
+    /* caption small */
+    font-family: 'Montserrat-500';
+    /* font-style: normal;
+    font-weight: 500; */
+    font-size: 12px;
+    /* line-height: 12px; */
+    /* identical to box height, or 100% */
+    display: flex;
+    /* align-items: center; */
+
+    /* white */
+    color: #FFFFFF;
+}
+
+.icon_location{
+/* icon-location */
+width: 15px;
+height: 15px;
+}
+
+.calendar{
+    display: flex;
+    gap: 10px;
+}
+
+.days{
+    display: flex;
+    font-family: "Montserrat-400";
+    color: #FFFFFF;
+    font-size: 12px;
+    line-height: 16px;
+    align-items: center;
+}
+
+.heading{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.card_text{
+    /* Гастрономическое путешествие вокруг Кавказа */
+    font-family: "Playfair-700";
+    font-size: 24px;
+    line-height: 28px;
+    /* white */
+    color: #FFFFFF;
+}
+
+.complexity{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.complexity_text{
+    font-family: "Montserrat-400";
+    font-size: 12px;
+    line-height: 16px;
+    /* white */
+    color: #FFFFFF;
+}
+
+.filled_star, .empty_star{
+    width: 15px;
+}
+
+.star{
+    display: flex
+}
+
+.link{
+    /* Link */
+    display: flex;
+    justify-content: center;
+    gap: 5px;
+}
+
+.show_all_course{
+    /* Показать все курсы */
+    /* link 2 */
+    font-family: 'Montserrat-700';
+    font-size: 16px;
+    line-height: 20px;
+    /* identical to box height, or 125% */
+    display: flex;
+    align-items: center;
+    text-transform: uppercase;
+
+    /* orange */
+    color: #D2691E;
+}
+
+@font-face {
+    font-family: "Playfair-700";
+    src: url("../fonts/Playfair-700.woff2");
+}
+
+.form{
+    background-image: url("../pictures/fruits.png");
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 622px;
+    width: 1440px;
+}
+
+.form_container{
+    /* form_desktop */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 130px 230px 196px;
+    gap: 40px;
+}
+
+.form_title{
+    /* Задать вопрос */
+    /* h2 */
+    font-family: 'Playfair-800';
+    font-size: 35px;
+    line-height: 42px;
+
+    /* brown */
+    color: #513833;
+}
+
+.form_text{
+    /* Заполните форму и наш оператор свяжется с вами для консультации. */
+    /* big text */
+    font-family: 'Montserrat-400';
+    font-size: 16px;
+    line-height: 24px;
+
+    /* brown */
+    color: #513833;
+}
+
+.form_field{
+    /* form */
+
+    display: flex;
+    /* flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    align-content: center; */
+    flex-wrap: wrap;
+    padding: 0px;
+    gap: 30px;
+
+    width: 850px;
+    height: 150px;
+
+}
+
+.name{
+    /* input field */
+
+    box-sizing: border-box;
+    padding: 18px 15px 18px 30px;
+
+    width: 850px;
+    min-width: 760px;
+    height: 60px;
+
+    /* biege */
+    background: #FFEBCD;
+    /* light orange */
+    border: 1px solid #FBD2B4;
+    border-radius: 5px;
+
+    /* Как к вам обращаться? */
+
+    /* big text */
+    font-family: 'Montserrat-400';
+    font-size: 16px;
+    line-height: 24px;
+
+    /* input gray */
+    color: #9B9898;
+}
+
+.telephone, .email{
+    /* input field */
+
+    box-sizing: border-box;
+    padding: 18px 15px 18px 30px;
+
+    width: 300px;
+    min-width: 300px;
+    height: 60px;
+
+    /* biege */
+    background: #FFEBCD;
+    /* light orange */
+    border: 1px solid #FBD2B4;
+    border-radius: 5px;
+
+    /* big text */
+    font-family: 'Montserrat-400';
+    font-size: 16px;
+    line-height: 24px;
+
+    /* input gray */
+    color: #9B9898;
+}
+
+.sub_button{
+    /* cta-btn */
+
+    box-sizing: border-box;
+    padding: 20px 0px;
+
+    width: 190px;
+    height: 60px;
+
+    /* orange */
+    background: #D2691E;
+    /* orange */
+    border: 1px solid #D2691E;
+    border-radius: 5px;
+
+    /* Отправить */
+
+    /* btn-text */
+    font-family: 'Montserrat-500';
+    font-size: 16px;
+    line-height: 20px;
+    /* identical to box height */
+
+    /* white */
+    color: #FFFFFF;
+}
+
+.learning{
+    /* learning_desktop */
+    width: 1440px;
+    height: 545px;
+
+    background: #F0EAD6;
+}
+
+.learning_container{
+    display: flex;
+    flex-direction: column;
+    padding: 90px 120px;
+    gap: 50px;
+    isolation: isolate;
+}
+
+.learning_information{
+    display: flex;
+    flex-direction: column;
+    gap: 30px; 
+    width: 1200px;
+}
+
+.learning_title{
+    /* Обучение */
+    /* h2 */
+    font-family: 'Playfair-800';
+    font-size: 35px;
+    line-height: 42px; /* identical to box height, or 120% */
+    /* brown */
+    color: #513833;
+}
+
+.learning_text{
+    /* Обучение проводится квалифицированными шеф-поварами, имеющими опыт работы в различных кухнях мира, включая Кавказскую, Крымскую, Индийскую, Европейскую и другие. */
+    width: 700px;
+    max-width: 700px;
+    height: 72px;
+
+    /* big text */
+    font-family: 'Montserrat-400';
+    font-size: 16px;
+    line-height: 24px; /* or 150% */
+
+    /* brown */
+    color: #513833;
+}
+
+.line{
+    /* Line 1 */
+    position: absolute;
+    width: 1313px;
+    height: 0px;
+    left: calc(50% - 1313px/2 + 63.5px);
+    bottom: -1523.33px;
+
+    /* light orange */
+    border: 3.5px solid #FBD2B4;
+    transform: rotate(-0.04deg);
+}
+
+.program{
+    /* program */
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+
+    width: 1200px;
+    height: 171px;
+}
+
+.program_title{
+    /* Программа мастер-классов */
+    height: 24px;
+
+    /* h4 */
+    font-family: 'Playfair-700';
+    font-size: 20px;
+    line-height: 24px;
+
+    /* brown */
+    color: #513833;
+}
+
+.program_information{
+    display: flex;
+    flex-direction: row;
+}
+
+.frame46{
+    /* Frame 46 */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    width: 1200px;
+    height: 117px;
+}
+
+.frame42{
+    /* Frame 42 */
+    display: flex;
+    /* flex-direction: column;
+    align-items: flex-start; */
+    gap: 30px;
+
+    width: 300px;
+}
+
+.frame1{
+    /* frame 1 */
+    display: flex;
+    /* flex-direction: row;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    align-content: flex-start; */
+    gap: 15px;
+    height: 72px;
+}
+
+.circle{
+    /* pseudo */
+    width: 15px;
+    height: 15px;
+    z-index: 1;
+}
+
+.program_text{
+    /* Изучение мировых кулинарных традиций и трендов */
+    width: 261px;
+    height: 72px;
+
+    /* big text */
+    font-family: 'Montserrat-400';
+    font-size: 16px;
+    line-height: 24px;
+
+    /* brown */
+    color: #513833;
+}
+
+.about{
+    /* about_desktop */
+    width: 1440px;
+    height: 490px;
+
+    /* backgroun biege */
+    background: #F0EAD6;
+}
+
+.about_container{
+    padding: 0px 120px 0px 0px;
+    display: flex;
+    align-items: center;
+}
+
+.about_image{
+    /* Picture */
+    width: 687.5px;
+    height: 490px;
+
+    background: url("../pictures/kitchen.png");
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.about_information{
+    /* about */
+    display: flex;
+    flex-direction: column;
+    /* justify-content: center;
+    align-items: flex-start; */
+    margin: 0px -55px;
+    padding: 30px 20px;
+    gap: 55px;
+    /* clear beige */
+    background: rgba(255, 235, 205, 0.75);
+    border-radius: 5px;
+}
+
+.about_title{
+    /* О нас */
+    width: 647.5px;
+    height: 42px;
+
+    /* h2 */
+    font-family: 'Playfair-800';
+    font-size: 35px;
+    line-height: 42px;
+
+    /* brown */
+    color: #513833;
+}
+
+.texts{
+    /* texts */
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+
+    width: 647.5px;
+    height: 218px;
+}
+
+.history, .mission{
+    /* history */
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.history{height: 107px}
+.mission{height: 86px}
+
+.history_title, .mission_title{
+    /* h4 */
+    font-family: 'Playfair-700';
+    font-size: 20px;
+    line-height: 24px;
+
+    /* brown */
+    color: #513833;
+}
+
+.mission_text, .history_text{
+    /* regular text */
+    font-family: 'Montserrat-400';
+    font-size: 14px;
+    line-height: 21px;
+
+    /* brown */
+    color: #513833;
+}
+
+.gallery{
+    /* gallery_desktop */
+    width: 1440px;
+    height: 775px;
+
+    /* backgroun biege */
+    background: #F0EAD6;
+}
+
+.gallery_container{
+    display: flex;
+    flex-direction: column;
+    padding: 120px 0px 40px;
+    gap: 50px;
+}
+
+.photo_gallery{
+    /* Photo Gallery */
+    display: flex;
+    flex-direction: column;
+    padding: 0px 120px;
+    gap: 30px;
+}
+
+.gallery_title{
+    /* Фотогалерея */
+    /* h2 */
+    font-family: 'Playfair-800';
+    font-size: 35px;
+    line-height: 42px;
+    /* identical to box height, or 120% */
+    display: flex;
+    align-items: center;
+
+    /* brown */
+    color: #513833;
+}
+
+.gallery_text_container{
+    /* Frame 37 */
+
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    align-content: flex-start;
+    gap: 20px 432px;
+
+    width: 1200px;
+    height: 48px;
+}
+
+.gallery_text{
+    /* Добавляйте фото в Instagram с хэштегом #куктур, а также отмечайте нас на фото. Лучшие фотографии украсят этот раздел нашего сайта. */
+    /* big text */
+    font-family: 'Montserrat-400';
+    font-size: 16px;
+    line-height: 24px;
+    width: 600px;
+    height: 48px;
+    /* brown */
+    color: #513833;
+
+    display: flex;
+    align-items: center;
+}
+
+.galley{
+    /* galley */
+    display: flex;
+    gap: 5px;
+
+    width: 1440px;
+    height: 445px;
+    overflow-x: scroll;
+}
+
+.box{background: url("../pictures/box.png");}
+.Picture{background: url("../pictures/Picture.png");}
+
+.photo1, .photo4{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+
+    width: 284px;
+    height: 445px;
+    border-radius: 10px;
+}
+
+.box, .Picture{
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+
+    width: 284px;
+    height: 445px;
+
+    border-radius: 10px;
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.photo3_group{padding: 0px 0px 0.0200043px;}
+
+.photo2_group, .photo3_group{
+    /* Group of photo*/
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+
+    width: 284px;
+    height: 445px;
+}
+
+.cat{background: url("../pictures/cat.png");}
+.tomatoes{background: url("../pictures/tomatoes.png");}
+.salad{background: url("../pictures/salad.png");}
+.men{background: url("../pictures/men.png");}
+.peaches{background: url("../pictures/peaches.png");}
+
+.cat, .tomatoes, .salad, .men, .peaches{
+    /* cat */
+    width: 284px;
+    height: 220px;
+
+    border-radius: 10px;
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.salad, .men, .peaches{
+    /* salad */
+    width: 284px;
+    height: 144.99px;
+}
+
+.contacts{
+    /* contacts_desktop */
+    width: 1440px;
+    height: 538px;
+
+    /* backgroun biege */
+    background: #F0EAD6;
+}
+
+.contacts_container{
+    display: flex;
+    justify-content: space-between;
+    padding: 60px 120px 40px;
+    gap: 10px;
+}
+
+.contact{
+    /* Frame 41 */
+    display: flex;
+    align-items: center;
+    gap: 135px;
+    width: 1200px;
+    height: 438px;
+}
+
+.contact_container{
+    /* Frame 40 */
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+
+    width: 502px;
+}
+
+.contact_information{
+    /* Frame 39 */
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+
+    height: 144px;
+}
+
+.content_title{
+    /* Контакты */
+
+    /* h2 */
+    font-family: 'Playfair-800';
+    font-size: 35px;
+    line-height: 42px;
+
+    /* identical to box height, or 120% */
+    height: 42px;
+
+    /* brown */
+    color: #513833;
+}
+
+.content_text{
+    /* Свяжитесь с нами любым удобным для вас способом или приходите к нам в гости. Мы будем рады поделиться увлекательными историями и подобрать для вас тур. */
+
+    /* big text */
+    font-family: 'Montserrat-400';
+    font-size: 16px;
+    line-height: 24px;
+
+    /* or 150% */
+    height: 72px;
+
+    /* brown */
+    color: #513833;
+}
+
+.contact_phone, .contact_email, .contact_adress{
+    /* phone */
+    display: flex;
+    gap: 20px;
+    height: 58px;
+}
+
+.icon-phone, .icon-email, .icon-adress{
+    /* icon-phone */
+    width: 25px;
+    height: 25px;
+}
+
+.phone_info, .email_info, .adress_info{
+    /* text */
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+
+    width: 457px;
+    height: 58px;
+}
+
+.phone_title, .email_title, .adress_title{
+    /* Телефон */
+
+    /* h4 */
+    font-family: 'Playfair-700';
+    font-size: 20px;
+    line-height: 24px;
+
+    /* identical to box height, or 120% */
+    height: 24px;
+
+    /* brown */
+    color: #513833;
+}
+
+.phone_text, .email_text, .adress_text{
+    /* +7 983 745-45-45 */
+
+    /* big text */
+    font-family: 'Montserrat-400';
+    font-size: 16px;
+    line-height: 24px;
+
+    /* identical to box height, or 150% */
+    height: 24px;
+
+    /* brown */
+    color: #513833;
+}
+
+.map{
+    /* map */
+    display: flex;
+    width: 563px;
+    min-width: 400px;
+    height: 366px;
+
+    background: url("../pictures/map.png");
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.footer{
+    /* footer_desktop */
+    width: 1440px;
+    height: 226px;
+
+    /* white */
+    background: #FFFFFF;
+}
+
+.footer_container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 30px 120px;
+    gap: 30px;
+}
+
+.footer_page{
+    /* footer_page */
+    display: flex;
+    justify-content: space-between;
+
+    width: 1200px;
+    height: 50px;
+}
+
+.logotype{
+    /* logo */
+    display: flex;
+    margin: 0 auto;
+    width: 190px;
+    height: 50px;
+}
+
+.logo_icon{
+    /* Vector (Stroke) */
+    width: 34px;
+    height: 43px;
+    margin-top: 3px;
+}
+
+.company_information{
+    display: flex;
+    flex-direction: column;
+    padding: 13px 0 0 9px;
+}
+
+.company_description{
+    /* Vector */
+    padding-top: 6px;
+}
+
+.footer_menu{
+    /* menu */
+    display: flex;
+    padding: 0px 30px;
+    gap: 30px;
+
+    margin: 0 auto;
+    width: 760px;
+    min-width: 760px;
+    height: 50px;
+}
+
+.footer_point{
+    /* Item → Link → Text */
+    height: 24px;
+
+    /* big text */
+    font-family: 'Montserrat-400';
+    font-size: 16px;
+    line-height: 24px;
+
+    /* identical to box height, or 150% */
+    display: flex;
+    align-items: center;
+
+    /* brown */
+    color: #513833;
+}
+
+.footer_phone{
+    /* 8 800 725-32-32 */
+    margin: 0 auto;
+    width: 250px;
+    height: 26px;
+
+    /* link 1 */
+    font-family: 'Montserrat-600';
+    font-size: 18px;
+    line-height: 26px;
+
+    /* identical to box height, or 144% */
+    /* display: flex;
+    align-items: center; */
+    text-align: right;
+
+    /* brown */
+    color: #513833;
+}
+
+.socials{
+    /* socials */
+
+    display: flex;
+    justify-content: center;
+    gap: 0px 15px;
+
+    width: 1200px;
+    height: 40px;
+}
+
+.vk, .ok, .reddit{
+    /* vk, ok, reddit */
+    box-sizing: border-box;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: 40px;
+    height: 40px;
+
+    /* light brown */
+    border: 1px solid #D7D4D4;
+    border-radius: 5px;
+}
+
+.terms_use_site{
+    /* Правила пользования сайтом */
+    height: 16px;
+
+    /* caption light */
+    font-family: 'Montserrat-400';
+    font-size: 12px;
+    line-height: 16px;
+    /* identical to box height, or 133% */
+    display: flex;
+    align-items: center;
+    text-align: center;
+
+    /* brown */
+    color: #513833;
+}

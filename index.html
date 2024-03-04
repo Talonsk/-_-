@@ -1,11 +1,459 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru" data-validate="html">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Cook-Tour">
+  <title>Cook-Tour</title>
+  <link rel="stylesheet" href="./css/style.css">
 </head>
 <body>
-    
+  <header data-test="header" class="header">
+    <!-- Шапка -->
+    <div class="header_logo">
+      <!-- <div class="image_and_text">
+        <img class="logo" src="pictures/Logo.svg" alt="Логотип" width="20" height="25"> 
+        <h1 class="company_name">COOKTOUR</h1>
+        <p class="company_text">Гастротуры с обучением</p>      
+      </div> -->
+      <div class="image_and_text">
+        <img class="logo_icon" src="pictures/Logo.svg" alt="Логотип">
+        <div class="company_information">
+          <img class="cooktour" src="pictures/Сooktour.svg" alt="Название компании">
+          <img class="company_description" src="pictures/Tours_with_training.svg" alt="Описание компании">            
+        </div>
+      </div>
+      <div class="menu">
+        <a href="#" class="menu_point">Гастротуры</a>
+        <a href="#" class="menu_point">Бронирование</a>
+        <a href="#" class="menu_point">О нас</a>
+        <a href="#" class="menu_point">Отзывы</a>
+        <a href="#" class="menu_point">Фотографии</a>
+        <a href="#" class="menu_point">Контакты</a>
+      </div>
+      <p class="phone">8 800 725-32-32</p> 
+    </div>
+  </header>
+  <main>
+    <section data-test="hero" class="hero">
+      <!-- Hero -->
+      <div class="course_information">
+        <div class="title_container">
+          <h2 class="course_title">Исследуйте вкусы Кавказа</h2>  
+        </div>
+        <div class="text_container">
+          <p class="course_text">В сопровождении опытных шеф-поваров вы откроете для себя богатство кавказской кухни и научитесь готовить традиционные блюда.</p>  
+        </div>
+        <a href="#">
+          <button class="course_button">
+            <p class="button_text">Подробнее о курсе</p>
+          </button>
+        </a>
+      </div>
+    </section>
+    <section data-test="events" class="events">
+      <!-- События -->
+      <div class="events_list">
+        <div class="heading1_btns">
+          <h2 class="title_events">Предстоящие события</h2>
+        </div>
+        <div class="maps">
+          <div class="card_photo1">
+            <div class="program_card">
+              <a href="#">
+                <button class="location_button">
+                  <div class="icon_location">
+                    <img src="pictures/Location.svg" scr="" alt="Флажок_локации">
+                  </div>
+                  <p class="location_text">Кавказ</p>
+                </button>
+              </a>
+              <div class="card_content">
+                <div class="heading">
+                  <div class="calendar">
+                    <img src="pictures/Calendar.svg" scr="" alt="Календарь">
+                    <p class="days">4 дня</p>                  
+                  </div>
+                  <h3 class="card_text">Гастрономическое путешествие вокруг Кавказа</h3>
+                </div>
+                <div class="complexity">
+                  <p class="complexity_text">Сложность:</p>
+                  <div class="star">
+                    <img class="filled_star" alt="Заполненная звезда" src="pictures/filled_star.svg">
+                    <img class="filled_star" alt="Заполненная звезда" src="pictures/filled_star.svg">
+                    <img class="filled_star" alt="Заполненная звезда" src="pictures/filled_star.svg">
+                    <img class="empty_star" alt="Пустая звезда" src="pictures/empty_star.svg">
+                    <img class="empty_star" alt="Пустая звезда" src="pictures/empty_star.svg">
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="card_photo2">
+            <div class="program_card">
+              <a href="#">
+                <button class="location_button">
+                  <div class="icon_location">
+                    <img src="pictures/Location.svg" scr="" alt="Флажок_локации">
+                  </div>
+                  <p class="location_text">Алтай</p>
+                </button>
+              </a>
+              <div class="card_content">
+                <div class="heading">
+                  <div class="calendar">
+                    <img src="pictures/Calendar.svg" scr="" alt="Календарь">
+                    <p class="days">13 дней</p>                  
+                  </div>
+                  <h3 class="card_text">Путь к мастерству в приготовлении блюд Алтая</h3>
+                </div>
+                <div class="complexity">
+                  <p class="complexity_text">Сложность:</p>
+                  <div class="star">
+                    <img class="filled_star" alt="Заполненная звезда" src="pictures/filled_star.svg">
+                    <img class="filled_star" alt="Заполненная звезда" src="pictures/filled_star.svg">
+                    <img class="empty_star" alt="Пустая звезда" src="pictures/empty_star.svg">
+                    <img class="empty_star" alt="Пустая звезда" src="pictures/empty_star.svg">
+                    <img class="empty_star" alt="Пустая звезда" src="pictures/empty_star.svg">
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="card_photo3">
+            <div class="program_card">
+              <a href="#">
+                <button class="location_button">
+                  <div class="icon_location">
+                    <img src="pictures/Location.svg" scr="" alt="Флажок_локации">
+                  </div>
+                  <p class="location_text">Адыгея</p>
+                </button>
+              </a>
+              <div class="card_content">
+                <div class="heading">
+                  <div class="calendar">
+                    <img src="pictures/Calendar.svg" scr="" alt="Календарь">
+                    <p class="days">6 дней</p>                  
+                  </div>
+                  <h3 class="card_text">От горных трав до морских деликатесов</h3>
+                </div>
+                <div class="complexity">
+                  <p class="complexity_text">Сложность:</p>
+                  <div class="star">
+                    <img class="filled_star" alt="Заполненная звезда" src="pictures/filled_star.svg">
+                    <img class="filled_star" alt="Заполненная звезда" src="pictures/filled_star.svg">
+                    <img class="filled_star" alt="Заполненная звезда" src="pictures/filled_star.svg">
+                    <img class="filled_star" alt="Заполненная звезда" src="pictures/filled_star.svg">
+                    <img class="empty_star" alt="Пустая звезда" src="pictures/empty_star.svg">
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="card_photo1">
+            <div class="program_card">
+              <a href="#">
+                <button class="location_button">
+                  <div class="icon_location">
+                    <img src="pictures/Location.svg" scr="" alt="Флажок_локации">
+                  </div>
+                  <p class="location_text">Кавказ</p>
+                </button>
+              </a>
+              <div class="card_content">
+                <div class="heading">
+                  <div class="calendar">
+                    <img src="pictures/Calendar.svg" scr="" alt="Календарь">
+                    <p class="days">4 дня</p>                  
+                  </div>
+                  <h3 class="card_text">Гастрономическое путешествие вокруг Кавказа</h3>
+                </div>
+                <div class="complexity">
+                  <p class="complexity_text">Сложность:</p>
+                  <div class="star">
+                    <img class="filled_star" alt="Заполненная звезда" src="pictures/filled_star.svg">
+                    <img class="filled_star" alt="Заполненная звезда" src="pictures/filled_star.svg">
+                    <img class="filled_star" alt="Заполненная звезда" src="pictures/filled_star.svg">
+                    <img class="empty_star" alt="Пустая звезда" src="pictures/empty_star.svg">
+                    <img class="empty_star" alt="Пустая звезда" src="pictures/empty_star.svg">
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="card_photo2">
+            <div class="program_card">
+              <a href="#">
+                <button class="location_button">
+                  <div class="icon_location">
+                    <img src="pictures/Location.svg" scr="" alt="Флажок_локации">
+                  </div>
+                  <p class="location_text">Алтай</p>
+                </button>
+              </a>
+              <div class="card_content">
+                <div class="heading">
+                  <div class="calendar">
+                    <img src="pictures/Calendar.svg" scr="" alt="Календарь">
+                    <p class="days">13 дней</p>                  
+                  </div>
+                  <h3 class="card_text">Путь к мастерству в приготовлении блюд Алтая</h3>
+                </div>
+                <div class="complexity">
+                  <p class="complexity_text">Сложность:</p>
+                  <div class="star">
+                    <img class="filled_star" alt="Заполненная звезда" src="pictures/filled_star.svg">
+                    <img class="filled_star" alt="Заполненная звезда" src="pictures/filled_star.svg">
+                    <img class="empty_star" alt="Пустая звезда" src="pictures/empty_star.svg">
+                    <img class="empty_star" alt="Пустая звезда" src="pictures/empty_star.svg">
+                    <img class="empty_star" alt="Пустая звезда" src="pictures/empty_star.svg">
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="card_photo3">
+            <div class="program_card">
+              <a href="#">
+                <button class="location_button">
+                  <div class="icon_location">
+                    <img src="pictures/Location.svg" scr="" alt="Флажок_локации">
+                  </div>
+                  <p class="location_text">Адыгея</p>
+                </button>
+              </a>
+              <div class="card_content">
+                <div class="heading">
+                  <div class="calendar">
+                    <img src="pictures/Calendar.svg" scr="" alt="Календарь">
+                    <p class="days">6 дней</p>                  
+                  </div>
+                  <h3 class="card_text">От горных трав до морских деликатесов</h3>
+                </div>
+                <div class="complexity">
+                  <p class="complexity_text">Сложность:</p>
+                  <div class="star">
+                    <img class="filled_star" alt="Заполненная звезда" src="pictures/filled_star.svg">
+                    <img class="filled_star" alt="Заполненная звезда" src="pictures/filled_star.svg">
+                    <img class="filled_star" alt="Заполненная звезда" src="pictures/filled_star.svg">
+                    <img class="filled_star" alt="Заполненная звезда" src="pictures/filled_star.svg">
+                    <img class="empty_star" alt="Пустая звезда" src="pictures/empty_star.svg">
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div> 
+        <div class="link">
+          <a href="#">
+            <p class="show_all_course">Показать все курсы</p>            
+          </a>
+          <div class="arrow_container">
+            <img class="arrow" src="pictures/arrow.svg" alt="Стрелка">
+          </div>
+        </div>
+      </div>
+    </section>
+    <section data-test="form" class="form">
+      <!-- Форма -->
+      <div class="form_container">
+        <h2 class="form_title">Задать вопрос</h2>
+        <p class="form_text">Заполните форму и наш оператор свяжется с вами для консультации.</p>
+        <form class="form_field">
+          <input type="text" class="name" placeholder="Как к вам обращаться?">
+          <input type="tel" class="telephone" placeholder="Телефон">
+          <input type="email" class="email" pattern="" placeholder="Email">
+          <input type="submit" class="sub_button">
+        </form>
+      </div>
+    </section>
+    <section data-test="learning" class="learning">
+      <!-- Обучение -->
+      <div class="learning_container">
+        <div class="learning_information">
+          <h2 class="learning_title">Обучение</h2>
+          <p class="learning_text">Обучение проводится квалифицированными шеф-поварами, имеющими опыт работы в различных кухнях мира, включая Кавказскую, Крымскую, Индийскую, Европейскую и другие.</p>
+        </div>
+        <div class="line"></div>
+        <div class="program">
+          <h4 class="program_title">Программа мастер-классов</h4>
+          <div class="program_information">
+            <div class="frame46">
+              <div class="frame42">
+                <div class="frame1">
+                  <div>
+                    <img  class="icon" src="pictures/icon_earth.svg" alt="Земля">                  
+                  </div>
+                  <p class="program_text">Изучение мировых кулинарных традиций и трендов</p>
+                </div>
+              </div>
+              <img class="circle" src="pictures/circle.svg" alt="Кружочек">
+            </div>
+            <div class="frame46">
+              <div class="frame42">
+                <div class="frame1">
+                  <div>
+                    <img  class="icon" src="pictures/icon_barbeque.svg" alt="Барбекю">                  
+                  </div>
+                  <p class="program_text">Обучение использованию кулинарного оборудования</p>
+                </div>
+              </div>
+              <img class="circle" src="pictures/circle.svg" alt="Кружочек">
+            </div>
+            <div class="frame46">
+              <div class="frame42">
+                <div class="frame1">
+                  <div>
+                    <img  class="icon" src="pictures/icon_security_shield.svg" alt="Щит">
+                  </div>
+                  <p class="program_text">Семинары по устойчивой кулинарии и пищевой безопасности</p>
+                </div>
+              </div>
+              <img class="circle" src="pictures/circle.svg" alt="Кружочек">
+            </div>
+            <div class="frame46">
+              <div class="frame42">
+                <div class="frame1">
+                  <div>
+                    <img  class="icon" src="pictures/icon_fork.svg" alt="Вилка">
+                  </div>
+                  <p class="program_text">Объяснение тонкостей кулинарных процессов</p>
+                </div>
+              </div>
+              <img class="circle" src="pictures/circle.svg" alt="Кружочек">
+            </div>            
+          </div>
+        </div>        
+      </div>
+    </section>
+    <section data-test="about" class="about">
+      <!-- О нас -->
+      <div class="about_container">
+        <div class="about_image"></div>
+        <div class="about_information">
+          <h2 class="about_title">О нас</h2>
+          <div class="texts">
+            <div class="history">
+               <h4 class="history_title">История компании</h4>
+               <p class="history_text">Наше кулинарное начало — в 2000 году мы открыли свой первый ресторан, а в 2005 году расширились до кулинарной школы, чтобы делиться нашей страстью к еде со всем миром.</p>
+            </div>
+            <div class="mission">
+              <h4 class="mission_title">Наша миссия</h4>
+              <p class="mission_text">Погрузить вас в мир гастрономии, научить создавать кулинарные шедевры и открыть секреты шеф-поваров.</p> 
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section data-test="gallery" class="gallery">
+      <!-- Галерея -->
+      <div  class="gallery_container">
+        <div class="photo_gallery">
+          <h2 class="gallery_title">Фотогалерея</h2>
+          <div class="gallery_text_container">
+            <p class="gallery_text">Добавляйте фото в Instagram с хэштегом #куктур, а также отмечайте нас на фото. Лучшие фотографии украсят этот раздел нашего сайта.</p>
+          </div>
+        </div>
+        <div class="galley">
+          <div class="photo1"><img class="box"></div>
+          <div class="photo2_group">
+            <img class="cat">
+            <img class="tomatoes">
+          </div>
+          <div class="photo3_group">
+            <img class="salad">
+            <img class="men">
+            <img class="peaches">
+          </div>
+          <div class="photo4"><img class="Picture"></div>
+          <div class="photo2_group">
+            <img class="cat">
+            <img class="tomatoes">
+          </div>
+          <div class="photo1"><img class="box"></div>
+          <div class="photo2_group">
+            <img class="cat">
+            <img class="tomatoes">
+          </div>
+          <div class="photo3_group">
+            <img class="salad">
+            <img class="men">
+            <img class="peaches">
+          </div>
+          <div class="photo4"><img class="Picture"></div>
+          <div class="photo2_group">
+            <img class="cat">
+            <img class="tomatoes"> 
+          </div> 
+        </div>
+      </div>
+    </section>
+    <section data-test="contacts" class="contacts">
+      <!-- Контакты -->
+      <div class="contacts_container">
+        <div class="contact">
+          <div class="contact_container">
+            <div class="contact_information">
+              <h2 class="content_title">Контакты</h2>
+              <p class="content_text">Свяжитесь с нами любым удобным для вас способом или приходите к нам в гости. Мы будем рады поделиться увлекательными историями и подобрать для вас тур.</p>
+            </div>
+            <div class="contact_phone">
+              <div><img class="icon-phone" src="pictures/icon-phone.svg"></div>
+              <div class="phone_info">
+                <h4 class="phone_title">Телефон</h4>
+                <p class="phone_text">+7 983 745-45-45</p>
+              </div>
+            </div>
+            <div class="contact_email">
+              <div><img class="icon-email" src="pictures/icon-mail.svg"></div>
+              <div class="email_info">
+                <h4 class="email_title">Email</h4>
+                <p class="email_text">info@cooktour.com</p>
+              </div>
+            </div>
+            <div class="contact_adress">
+              <div><img class="icon-adress" src="pictures/icon-pin-contacts.svg"></div>
+              <div class="adress_info">
+                <h4 class="adress_title">Адрес</h4>
+                <p class="adress_text">г. Москва, пр-т Вкуса, д. 114, офис 1071</p>
+              </div>
+            </div>
+          </div>
+          <div class="map"></div>
+        </div>
+      </div>
+    </section>
+  </main>
+  <footer data-test="footer" class="footer">
+    <!-- Подвал -->
+    <div class="footer_container">
+      <div class="footer_page">
+        <div class="logotype">
+          <img class="logo_icon" src="pictures/logo-icon.svg" alt="Логотип">
+          <div class="company_information">
+            <img class="cooktour" src="pictures/cooktour.svg" alt="Название компании">
+            <img class="company_description" src="pictures/company_text.svg" alt="Описание компании">            
+          </div>
+        </div>
+        <div class="footer_menu">
+          <a href="#" class="footer_point">Гастротуры</a>
+          <a href="#" class="footer_point">Бронирование</a>
+          <a href="#" class="footer_point">О нас</a>
+          <a href="#" class="footer_point">Отзывы</a>
+          <a href="#" class="footer_point">Фотографии</a>
+          <a href="#" class="footer_point">Контакты</a>
+        </div>
+        <p class="footer_phone">8 800 725-32-32</p> 
+      </div>
+      <div class="socials">
+        <div class="vk"><img src="pictures/icon-vk.svg"></div>
+        <div class="ok"><img src="pictures/icon-ok.svg"></div>
+        <div class="reddit"><img src="pictures/icon-reddit.svg"></div>
+      </div>
+      <p class="terms_use_site">Правила пользования сайтом</p>
+    </div>
+  </footer>
 </body>
 </html>
+
